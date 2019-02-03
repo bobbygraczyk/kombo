@@ -4,11 +4,11 @@
   "description": "Stream controller",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js",
+    "serverDev": "nodemon index.js",
+    "server": "index.js",
     "client": "cd client && npm start",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "start": "npm run dev"
-
+    "dev": "concurrently \"npm run serverDev\" \"npm run client\"",
+    "staging": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "",
   "license": "",
